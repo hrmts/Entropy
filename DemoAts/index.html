@@ -13,13 +13,13 @@
             }
             var employeeQuery ="?employees="+formData[0];
             for(var i = 1; i < formData.length; i++) {
-                employeeQuery = eployeeQuery + "&employees=" + formData[i] 
+                employeeQuery = employeeQuery + "&employees=" + formData[i] 
             }
             
          console.log(employeeQuery);
          
          //http redirect
-         //window.location.replace("http://localhost:56985/Home/New"+employeeQuery);     
+         window.location.replace("http://localhost:56985/Home/New"+employeeQuery);     
         
         // stop the form from submitting the normal way and refreshing the page
         event.preventDefault();
