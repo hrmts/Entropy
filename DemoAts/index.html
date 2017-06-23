@@ -5,6 +5,8 @@
         $('form').submit(function(event) {
             
             var formData = $('#employees').val().split('%');
+            console.log($('#employees').val());
+            console.log(formData);
             if (formData.length == 0) {
                 alert("Input is empty")
                 return;
@@ -14,7 +16,7 @@
                 employeeQuery = eployeeQuery + "&employees=" + formData[i] 
             }
             
-         console.log(formData);
+         console.log(employeeQuery);
          
          //http redirect
          window.location.replace("http://localhost:56985/Home/New"+formData);     
