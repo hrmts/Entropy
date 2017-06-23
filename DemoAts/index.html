@@ -3,10 +3,7 @@
 <script type="text/javascript">
     $(document).ready(function() { 
         $('form').submit(function(event) {
-            console.log("start");
             var formData = $('#employees').val().split('%');
-            console.log($('#employees').val());
-            console.log(formData);
             if (formData.length == 0) {
                 alert("Input is empty")
                 return;
@@ -16,14 +13,12 @@
                 employeeQuery = employeeQuery + "&employees=" + formData[i] 
             }
             
-         console.log(employeeQuery);
-         
-         //http redirect
-         window.location.replace("http://localhost:56985/Home/New"+employeeQuery);     
-        
-        // stop the form from submitting the normal way and refreshing the page
-        event.preventDefault();
-         }); 
+            //http redirect
+            window.location.replace("http://localhost:56985/Home/New"+employeeQuery);     
+
+            // stop the form from submitting the normal way and refreshing the page
+            event.preventDefault();
+        }); 
     });
 </script>
 
