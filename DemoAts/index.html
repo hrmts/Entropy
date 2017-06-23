@@ -3,7 +3,7 @@
 <script type="text/javascript">
     $(document).ready(function() { 
         $('form').submit(function(event) {
-            
+            console.log("start");
             var formData = $('#employees').val().split('%');
             console.log($('#employees').val());
             console.log(formData);
@@ -29,6 +29,6 @@
 
 <form>
   <label for="employees">Json input</label> 
-  <textarea id="employees" name="message" rows="30" cols="30">arne@jensen.no;arne;jensen%petter@hansen.no;petter;hansen%jon.snow@winterfell.got;Jon "King in the north!"; Snow</textarea>
+  <textarea id="employees" name="employees" rows="30" cols="30">arne@jensen.no;arne;jensen%petter@hansen.no;petter;hansen%jon.snow@winterfell.got;Jon "King in the north!"; Snow</textarea>
   <input type="submit">Start onboarding</input>
 </form>
