@@ -1,1 +1,29 @@
 
+<h1>hello world</h1>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() { 
+        $('form').submit(function(event) {
+            var formData = $('#employees').val().split('%');
+            if (formData.length == 0) {
+                alert("Input is empty")
+                return;
+            }
+            var employeeQuery ="?employees="+formData[0];
+            for(var i = 1; i < formData.length; i++) {
+                employeeQuery = employeeQuery + "&employees=" + formData[i] 
+            }
+            
+            //http redirect
+            window.location.replace("http://localhost:5060/Home/New"+employeeQuery);     
+            // stop the form from submitting the normal way and refreshing the page
+            event.preventDefault();
+        }); 
+    });
+</script>
+
+<form action="http://localhost:5060/Home/New" method="GET">
+  <label for="employees">Json input</label> 
+  <textarea id="employees" name="employees" rows="30" cols="30">arne@jensen.no;arne;jensen%petter@hansen.no;petter;hansen%jon.snow@winterfell.got;Jon;Snow</textarea>
+  <input type="submit">Start onboarding</input>
+</form>
