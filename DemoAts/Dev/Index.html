@@ -15,14 +15,14 @@
             }
             
             //http redirect
-            window.location.replace("http://localhost:5060/Home/New"+employeeQuery);     
+            window.location.replace("http://localhost:5060/onboarding/New"+employeeQuery);     
             // stop the form from submitting the normal way and refreshing the page
             event.preventDefault();
         }); 
     });
 </script>
 
-<form action="http://localhost:5060/Home/New" method="GET">
+<form action="http://localhost:5060/onboarding/New" method="GET">
   <label for="employees">Json input</label> 
   <textarea id="employees" name="employees" rows="30" cols="30">arne@jensen.no;arne;jensen%petter@hansen.no;petter;hansen%jon.snow@winterfell.got;Jon;Snow</textarea>
   <input type="submit">Start onboarding</input>
