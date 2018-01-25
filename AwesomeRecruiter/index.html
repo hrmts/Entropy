@@ -66,14 +66,14 @@
                             <th scope="row">1</th>
                             <td>Arild</td>
                             <td>Isaksen</td>
-                            <td>arild.isaksen.v4.onboarding@hrmts.cool</td>
+                            <td>dummy10@hrmts.cool</td>
                         </tr>
                         <tr>
                             <td scope="row"><input class="" type="checkbox" value="2" id="karinaChecked" onClick="doStuff()"></td>
                             <th scope="row">2</th>
                             <td>Karina</td>
                             <td>Thingvold</td>
-                            <td>karina.thingvold.v4.onboarding@hrmts.cool</td>
+                            <td>dummy3@hrmts.cool</td>
                             
                         </tr>
                         <tr>
@@ -81,28 +81,78 @@
                             <th scope="row">3</th>
                             <td>Oskar</td>
                             <td>Lund</td>
-                            <td>oskar.lund.v4.onboarding@hrmts.cool</td>
+                            <td>dummy12@hrmts.cool</td>
                         </tr>
                         <tr>
                             <td scope="row"><input class="" type="checkbox" value="4" id="espenChecked" onClick="doStuff()"></td>
                             <th scope="row">4</th>
                             <td>Espen</td>
                             <td>Trydal</td>
-                            <td>espen.trydal.v4.onboarding@hrmts.cool</td>
+                            <td>dummy14@hrmts.cool</td>
                         </tr>
                         <tr>
                             <td scope="row"><input class="" type="checkbox" value="5" id="oyvindChecked" onClick="doStuff()"></td>
                             <th scope="row">5</th>
                             <td>Øyvind</td>
                             <td>Haagensen</td>
-                            <td>oyvind.haagensen.v4.onboarding@hrmts.cool</td>
+                            <td>dummy16@hrmts.cool</td>
                         </tr>
                         <tr>
                             <td scope="row"><input class="" type="checkbox" value="6" id="marianneChecked" onClick="doStuff()"></td>
                             <th scope="row">6</th>
                             <td>Marianne</td>
                             <td>Bekkevold</td>
-                            <td>marianne.bekkevold.v4.onboarding@hrmts.cool</td>
+                            <td>dummy7@hrmts.cool</td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><input class="" type="checkbox" value="1" id="meretheChecked" onClick="doStuff()"></td>
+                            <th scope="row">7</th>
+                            <td>Merethe</td>
+                            <td>Myrstad</td>
+                            <td>dummy9@hrmts.cool</td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><input class="" type="checkbox" value="2" id="veronicaChecked" onClick="doStuff()"></td>
+                            <th scope="row">8</th>
+                            <td>Veronica</td>
+                            <td>Hansen</td>
+                            <td>dummy11@hrmts.cool</td>
+                            
+                        </tr>
+                        <tr>
+                            <td scope="row"><input class="" type="checkbox" value="3" id="fariaChecked" onClick="doStuff()"></td>
+                            <th scope="row">9</th>
+                            <td>Faria</td>
+                            <td>Osman</td>
+                            <td>dummy7@hrmts.cool</td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><input class="" type="checkbox" value="4" id="charlotteChecked" onClick="doStuff()"></td>
+                            <th scope="row">11</th>
+                            <td>Charlotte</td>
+                            <td>Trydal Sydow</td>
+                            <td>dummy15@hrmts.cool</td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><input class="" type="checkbox" value="5" id="jetteChecked" onClick="doStuff()"></td>
+                            <th scope="row">12</th>
+                            <td>Jette</td>
+                            <td>Jensen</td>
+                            <td>dummy17@hrmts.cool</td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><input class="" type="checkbox" value="6" id="carolaChecked" onClick="doStuff()"></td>
+                            <th scope="row">13</th>
+                            <td>Carola</td>
+                            <td>Hörndal</td>
+                            <td>dummy19@hrmts.cool</td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><input class="" type="checkbox" value="6" id="thonyChecked" onClick="doStuff()"></td>
+                            <th scope="row">14</th>
+                            <td>Thony</td>
+                            <td>Evenson</td>
+                            <td>dummy20@hrmts.cool</td>
                         </tr>
                     </tbody>
                 </table>
@@ -119,7 +169,7 @@
                             <a href="#" class="list-group-item list-group-item-action list-group-item-light">Print Candidate Information</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Delete Selected Candidates</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-light">Export Candidate List</a>
-                            <a href="https://test-onboarding.hrmts.net" class="list-group-item list-group-item-action list-group-item-secondary startOnboarding">Start Onboarding Process</a>
+                            <a href="https://onboarding.hrmts.net" class="list-group-item list-group-item-action list-group-item-secondary startOnboarding">Start Onboarding Process</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-light">Background Check</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Digital Signature</a>
                         </div>
@@ -134,26 +184,57 @@
         
                             var checked = []; 
                             if(document.getElementById('arildChecked').checked) {
-                                checked.push("newHires=arild.isaksen.v4.onboarding@hrmts.cool;Arild;Isaksen")
+                                checked.push("newHires=dummy10@hrmts.cool;Arild;Isaksen")
                             }
         
                             if(document.getElementById('karinaChecked').checked) {
-                                checked.push("newHires=karina.thingvold.v4.onboarding@hrmts.cool;Karina;Thingvold");
+                                checked.push("newHires=dummy3@hrmts.cool;Karina;Thingvold");
                             }
         
                             if(document.getElementById('oskarChecked').checked) {
-                                checked.push("newHires=oskar.lund.v4.onboarding@hrmts.cool;Oskar;Lund")
+                                checked.push("newHires=dummy12@hrmts.cool;Oskar;Lund")
                             }
         
                             if(document.getElementById('espenChecked').checked) {
-                                checked.push("newHires=espen.trydal.v4.onboarding@hrmts.cool;Espen;Trydal")
+                                checked.push("newHires=dummy14@hrmts.cool;Espen;Trydal")
                             }
-        
+
                             if(document.getElementById('oyvindChecked').checked) {
-                                checked.push("newHires=marianne.bekkevold.v4.onboarding@hrmts.cool;Marianne;Bekkevold")
+                                checked.push("newHires=dummy16@hrmts.cool;Øyvind;Haagensen")
                             }
         
-                            console.log(checked);
+                            if(document.getElementById('marianneChecked').checked) {
+                                checked.push("newHires=dummy5@hrmts.cool;Marianne;Bekkevold")
+                            }
+
+                            if(document.getElementById('meretheChecked').checked) {
+                                checked.push("newHires=dummy9@hrmts.cool;Merethe;Myrstad")
+                            }
+        
+                            if(document.getElementById('veronicaChecked').checked) {
+                                checked.push("newHires=dummy11@hrmts.cool;Veronica;Hansen");
+                            }
+        
+                            if(document.getElementById('fariaChecked').checked) {
+                                checked.push("newHires=dummy7@hrmts.cool;Faria;Osman")
+                            }
+        
+                            if(document.getElementById('charlotteChecked').checked) {
+                                checked.push("newHires=dummy15@hrmts.cool;Charlotte;Sydow")
+                            }
+
+                            if(document.getElementById('jetteChecked').checked) {
+                                checked.push("newHires=dummy17@hrmts.cool;Jette;Jensen")
+                            }
+        
+                            if(document.getElementById('carolaChecked').checked) {
+                                checked.push("newHires=dummy19@hrmts.cool;Carola;Hörndal")
+                            }
+
+                            if(document.getElementById('thonyChecked').checked) {
+                                checked.push("newHires=dummy20@hrmts.cool;Thony;Evenson")
+                            }
+
                             var query ="";
                             checked.forEach((element, index) => {
                                 if(index === 0) {
