@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+
+<script>
+(function(window, document, tag, url, name, wid, a, m) {
+  window[name] = window[name] || function() {
+    (window[name].q = window[name].q || []).push(arguments);
+    document.getElementById("dixa-widget-wrapper") !== null && document.getElementById("dixa-widget-wrapper").contentWindow.postMessage(JSON.stringify(arguments), "*");
+  },
+  window[name].l = 1 * new Date(),
+  window[name].wid = wid,
+  a = document.createElement(tag),
+  m = document.getElementsByTagName(tag)[0],
+  a.async = 1,
+  a.setAttribute("charset", "utf-8"),
+  a.src = url,
+  m.parentNode.insertBefore(a, m)
+})(window, document, "script", "https://widget.dixa.io/assets/scripts/javascript/loader.js", "_dixa", "a1ca4bbd-2afa-485c-bf87-09d1c3ff1706");
+</script>
+
+</body>
+</html>
